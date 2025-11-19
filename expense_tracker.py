@@ -25,8 +25,8 @@ with st.form("expense_from"):
       'Amount':[amout],
       'Description':[Description]
     })
-    st.session_state.expenses = pd.contact([st.session_state.expenses, new_expense], ignore_index = True)
-    st.success("Expense added successfully!")
+      st.session_state.expenses = pd.contact([st.session_state.expenses, new_expense], ignore_index = True)
+      st.success("Expense added successfully!")
 
 if not st.session_state.expense.empty:
   st.subheader("Your Expense")
