@@ -25,7 +25,7 @@ with st.form("expense_from"):
       'Amount':[amout],
       'Description':[Description]
     })
-    st.session_state.expenses = pd.contact(
+    st.session_state.expenses = pd.concat(
       [st.session_state.expenses, new_expense], 
       ignore_index = True
     )
