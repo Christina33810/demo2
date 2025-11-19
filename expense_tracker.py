@@ -26,8 +26,8 @@ with st.form("expense_from"):
       'Description':[Description]
     })
     st.session_state.expenses = pd.concat(
-      [st.session_state.expenses, new_expense], 
-      ignore_index = True
+        [st.session_state.expenses, new_expense], 
+        ignore_index = True
     )
     st.success("Expense added successfully!")
 
